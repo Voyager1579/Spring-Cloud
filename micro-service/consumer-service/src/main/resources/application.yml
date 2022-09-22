@@ -1,0 +1,13 @@
+spring:
+  application:
+    name: consumer-service
+
+cloud:
+  nacos:
+    server-addr: 127.0.0.1:8891
+    # 将ephemeral修改为false，表示非临时实例
+    ephemeral: false
+
+  loadbalancer:
+    nacos:
+      enable: true
